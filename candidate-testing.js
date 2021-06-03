@@ -98,7 +98,7 @@ numberOfCorrectAnswers=numberOfCorrectAnswers+1;
   if(grade>40){
     console.log(">>> Status:  PASSED <<<")
   }else{
-    consolelog(">>> Status :FAILED <<<")
+    console.log(">>> Status :FAILED <<<")
   }
 
   
