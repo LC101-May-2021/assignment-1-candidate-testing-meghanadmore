@@ -53,9 +53,18 @@ function askQuestion()
    console.log("correct Answer :40 \n");
 
 
-   let ques4='4)What is the minimum crew size for the ISS?'
-   questions.push(ques4);
-   candidateAnswer = input.question(ques4);
+    let ques4="4)Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index?";
+  questions.push(ques4);
+   candidateAnswer=input.question( ques4);
+   correctAnswer='Trajectory';
+   correctAnswers.push(correctAnswer);
+   candidateAnswers.push(candidateAnswer);
+   console.log("your Answer  :"+candidateAnswer);
+   console.log("correct Answer :Trajectory \n");
+
+   let ques5='5)What is the minimum crew size for the ISS?'
+   questions.push(ques5);
+   candidateAnswer = input.question(ques5);
    correctAnswer='3';
    correctAnswers.push(correctAnswer);
    candidateAnswers.push(candidateAnswer);
@@ -65,14 +74,7 @@ function askQuestion()
 
 
 
-  let ques5="5)Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index?";
-  questions.push(ques5);
-   candidateAnswer=input.question( ques5);
-   correctAnswer='Trajectory';
-   correctAnswers.push(correctAnswer);
-   candidateAnswers.push(candidateAnswer);
-   console.log("your Answer  :"+candidateAnswer);
-   console.log("correct Answer :Trajectory \n");
+  
     
  
 }
@@ -88,7 +90,7 @@ function gradeQuiz(candidateAnswers) {
  // console.log(correctAnswers);
   //console.log(candidateAnswers)
   for(let i=0;i<questions.length;i++) {
-if(correctAnswers[i]===candidateAnswers[i])
+if(correctAnswers[i].toLowerCase()===candidateAnswers[i].toLowerCase())
 {
 numberOfCorrectAnswers=numberOfCorrectAnswers+1;
 //console.log(numberOfCorrectAnswers);
