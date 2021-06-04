@@ -98,7 +98,15 @@ if(correctAnswers[i].toLowerCase()===candidateAnswers[i].toLowerCase())
 numberOfCorrectAnswers=numberOfCorrectAnswers+1;
 //console.log(numberOfCorrectAnswers);
 }
-}grade=(numberOfCorrectAnswers/numberOfQuizQuestions)*100;
+
+}
+grade=(numberOfCorrectAnswers/numberOfQuizQuestions)*100;
+console.log("Candidate Name:  "+candidateName);
+for(let i=0;i<questions.lemgth;i++){
+  console.log(`${i+1}) ${questions[i]}`);
+  console.log("your Answer:  " + candidateAnswers[i]);
+  console.log("correct Answer:  "+correctAnswers[i]+ "\n");
+}
 
   console.log(`>>> Overall Grade :${grade}% ${numberOfCorrectAnswers} out of${questions.length} are correct`);
   if(grade>40){
