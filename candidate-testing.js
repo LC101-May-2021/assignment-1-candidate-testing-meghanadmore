@@ -99,6 +99,7 @@ numberOfCorrectAnswers=numberOfCorrectAnswers+1;
 //console.log(numberOfCorrectAnswers);
 }
 }grade=(numberOfCorrectAnswers/numberOfQuizQuestions)*100;
+
   console.log(`>>> Overall Grade :${grade}% ${numberOfCorrectAnswers} out of${questions.length} are correct`);
   if(grade>40){
     console.log(">>> Status:  PASSED <<<")
