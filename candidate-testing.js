@@ -23,7 +23,7 @@ function askQuestion()
 {
   //input.question
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-  let ques1='1)Who was the first American woman in space?'
+  let ques1='1)Who was the first American woman in space? .'
   questions.push(ques1);
   candidateAnswer = input.question(ques1);
   correctAnswer ='Sally Ride';
@@ -32,7 +32,7 @@ function askQuestion()
    console.log("your Answer  :"+candidateAnswer);
    console.log("correct Answer :Sally Ride \n");
 
-   let ques2='2)True or false: 5 kilometer == 5000 meters?'
+   let ques2='2)True or false: 5 kilometer == 5000 meters? .'
    questions.push(ques2);
    candidateAnswer = input.question(ques2);
    correctAnswer ='True';
@@ -43,7 +43,7 @@ function askQuestion()
 
 
 
-  let ques3='3)(5 + 3)/2 * 10 = ?';
+  let ques3='3)(5 + 3)/2 * 10 = ? .';
   questions.push(ques3);
    candidateAnswer = input.question(ques3);
    correctAnswer='40';
@@ -53,7 +53,7 @@ function askQuestion()
    console.log("correct Answer :40 \n");
 
 
-    let ques4="4)Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index?";
+    let ques4="4)Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index? .";
   questions.push(ques4);
    candidateAnswer=input.question( ques4);
    correctAnswer='Trajectory';
@@ -62,7 +62,7 @@ function askQuestion()
    console.log("your Answer  :"+candidateAnswer);
    console.log("correct Answer :Trajectory \n");
 
-   let ques5='5)What is the minimum crew size for the ISS?'
+   let ques5='5)What is the minimum crew size for the ISS? .'
    questions.push(ques5);
    candidateAnswer = input.question(ques5);
    correctAnswer='3';
